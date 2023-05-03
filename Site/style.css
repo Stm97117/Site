@@ -1,0 +1,316 @@
+
+header, .link, container-footer {
+
+  font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  color: #fff;
+  }
+  
+
+
+.galerie, html {
+
+  scroll-behavior: smooth; /* Rend le défilement sur la page doux et fluide */
+
+  } 
+  
+
+body {
+
+    overflow-y: scroll;
+
+}  
+
+#logo {
+  height: 3.5em;
+  position: fixed;
+  left: 16px;
+  filter: invert(1);
+}
+
+.titre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1  {
+
+  padding-right:3%; /* Ajoute un espace vide à droite de chaque mot du titre */
+
+  }
+  
+#titre1{
+
+  
+  color: rgb(164,47,32);
+}
+#titre2{
+  color:rgb(222,117,0);
+}
+#titre3{
+
+  color:rgb(6,129,109);
+
+}
+
+header {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5em;
+  z-index: 1;
+  background-color: #000;
+
+  } 
+
+
+.menu{
+  position: fixed;
+  right: -40px;
+  display:flex;
+  align-items: center;
+  
+
+}
+
+.accessibilite{
+
+  max-height: 4em;
+  position: absolute;
+  z-index: 4;
+  right:0;
+}
+
+
+.menu:hover .accessibilite{
+  opacity: 0;
+  transform: scale(1.5);
+  visibility: hidden;
+  z-index: 2;
+}
+
+.menu .accessibilite{
+  transition: 1s, z-index 0s;
+
+}
+
+
+#liste {
+  right: 60px;
+  position: relative;
+  font-size: 14.85px;
+  z-index: 3;
+  transition: 1s;
+  opacity: 0;
+
+}
+
+.link{
+
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+#link1:hover {
+
+  color: rgb(164,47,32) ;
+
+}
+
+
+#link2:hover {
+
+  color: rgb(222,117,0) ;
+
+
+}
+
+
+#link3:hover {
+
+  color: rgb(6,129,109) ;
+
+
+
+}
+
+#link1, #link2, #link3 {
+  
+  transition: 1s;
+
+
+}
+
+.menu:hover #liste{
+
+  transform: scale(1.20);
+  opacity: 1;
+}
+
+.retour{
+
+  transform: scale(1.3);
+
+}
+
+#self{
+
+filter:invert(15%) sepia(90%) saturate(6909%) hue-rotate(272deg) brightness(92%) contrast(97%);
+
+}
+
+.temple1:hover{
+
+  filter: brightness(0) saturate(100%) invert(22%) sepia(28%) saturate(4679%) hue-rotate(345deg) brightness(96%) contrast(92%);
+  transform: scale(1.10);
+
+}
+
+.temple2:hover{
+
+  filter: brightness(0) saturate(100%) invert(60%) sepia(43%) saturate(7241%) hue-rotate(12deg) brightness(98%) contrast(101%);
+  transform: scale(1.10);
+
+}
+
+.temple3:hover{
+
+  filter: brightness(0) saturate(100%) invert(21%) sepia(92%) saturate(3344%) hue-rotate(162deg) brightness(93%) contrast(95%);
+  transform: scale(1.10);
+
+}
+
+.temple4:hover{
+
+  
+  transform: scale(1.10);
+  filter: brightness(0) saturate(100%) invert(82%) sepia(100%) saturate(463%) hue-rotate(1deg) brightness(86%) contrast(98%);
+}
+
+.retour:hover{
+
+filter: brightness(0) saturate(100%) invert(22%) sepia(28%) saturate(4679%) hue-rotate(345deg) brightness(96%) contrast(92%);
+  transform: scale(1.10);
+}
+.temple1, .temple2, .temple3, .temple4, .retour {
+
+  transition: transform 0.5s, filter 1s;
+  
+}
+
+
+.enveloppe {
+
+  max-width: 100%;
+  display: flex;/* Dispose les éléments en flex*/
+  overflow: visible;
+  margin-top: 5em;
+  margin-bottom: 1em;
+
+} 
+  
+
+.enveloppe img {
+
+  max-width: 100%;
+  max-height:calc(100vh - 5.5em);
+ 
+} /* Fais en sorte que les images ne dépassent pas la largeur et la longeur de la page*/
+  
+
+.galerie__img {
+
+  scroll-snap-type: y proximity;
+  scroll-snap-align: center;/* Aligne les éléments de la galerie au centre de la fenêtre lorsqu'ils sont "snappés"*/
+  padding-bottom: 20px;
+  object-fit: cover;
+  width: 100%;
+
+} 
+
+.petite-nav {
+
+    height: fit-content;
+    width: 4em;
+    top: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 8px;
+    position:fixed;
+    background-color: #fff;
+    border-radius: 0px 0px 30px 0px;
+
+}
+
+.petite-nav img{
+
+  padding-block: 0.2em;
+
+}
+#nagou{
+
+  height: 100%;
+}
+
+
+.texte { 
+
+  font-size: 20px;
+  font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  text-align: right;
+  
+  padding: 1em 1em 0.5em 1em;
+
+}
+
+.droite{
+  width: 70%;
+  display: grid;
+  margin-left: 1em;
+
+}
+
+.divinite:hover{
+
+transform: scale(1.20);
+
+}
+
+.divinite{
+
+  justify-self: center;
+  transition: 4s;
+  height: 20em;
+}
+
+.contenu {
+
+  font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  color: black;
+  font-size: 20px;
+  margin-bottom: 0 auto;
+  padding: 0px 10px 30px;/*Ajoute un espace vide autour de l'élément: 0px en haut, 10px à gauche et à droite, 30px en bas*/
+  text-align: center;
+
+} 
+  
+.container-footer {
+
+  font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  background-color: rgba(0,0,0);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+
+}
+
+
+  .footer {
+
+  margin: 20px auto;/* Ajoute une marge de 20px*/
+
+} 
